@@ -85,5 +85,12 @@ yyyy-mm-dd
 Aleksandra K :: pushed devlog.txt; copied .gitignore from library
 	     	to root of repo; 
 Shafali G :: <Thing member did.>
-Rohan A :: <Thing member did.>
+Rohan A :: Worked on proposal, converted into bulleted form and expanded on methods and instance variables for classes.
+==============================================================
+
+2018-1-2
+--------------------------------------------------------------
+Aleksandra K :: <Thing member did.>
+Shafali G :: <Thing member did.>
+Rohan A :: Accepted GitHub request, changed name of pdf to proposal. Worked on proposal in Dojo.
 ==============================================================
