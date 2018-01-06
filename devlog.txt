@@ -81,14 +81,14 @@ yyyy-mm-dd
 2018-1-5
 --------------------------------------------------------------
 Aleksandra K :: Added Student.java and 5 subclasses (Goth, Thespian, Nerd, Weirdo, Athlete); updated proposal. 
-Shafali G :: <Thing member did.>
+Shafali G :: Drew diagrams on KTS and worked on specifics of the game with the team. 
 Rohan A :: Set up class Woo, discuss proposal with team.
 ==============================================================
 
 2018-1-4
 --------------------------------------------------------------
 Aleksandra K :: Worked on proposal and sketched uml diagram
-Shafali G :: <Thing member did.>
+Shafali G :: Worked on the proposal and pushed it to the repo. 
 Rohan A :: Worked on inheritance tree, pushed uml.pdf to repo.
 ==============================================================
 
@@ -96,14 +96,14 @@ Rohan A :: Worked on inheritance tree, pushed uml.pdf to repo.
 --------------------------------------------------------------
 Aleksandra K :: pushed devlog.txt; copied .gitignore from library
 	     	to root of repo; 
-Shafali G :: <Thing member did.>
+Shafali G :: Updated the specifics of the instance variables for classes. 
 Rohan A :: Worked on proposal, converted into bulleted form and expanded on methods and instance variables for classes.
 ==============================================================
 
 2018-1-2
 --------------------------------------------------------------
 Aleksandra K :: 
-Shafali G :: <Thing member did.>
+Shafali G :: Accepted GitHub request and worked on the proposal. 
 Rohan A :: Accepted GitHub request, changed name of pdf to proposal. Worked on proposal in Dojo.
 ==============================================================
 
