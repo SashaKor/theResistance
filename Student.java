@@ -15,11 +15,11 @@ public class Student{
     // physical health; functions as HP in that dropping below 0 = gameover
     public int _physHealth;
     // friend count;
-    public int friendCnt;
+    public int _friendCnt;
     // tracking popularity amongst player's type
-    public int popularity;
+    public int _popularity;
     // name; used for user experience
-    public String name;
+    public String _name;
 
 
     //~~~~~~~~~~~~~~~~~~~~Mutators~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,6 +79,7 @@ public class Student{
 
     public double score(){
 	//implementation
+	return 1.0;
     }
 
     /*
@@ -86,6 +87,7 @@ public class Student{
      */
     public int randInt(){
 	//implementation
+	return 1;
     }
 
     /*
