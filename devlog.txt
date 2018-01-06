@@ -80,14 +80,14 @@ yyyy-mm-dd
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2018-1-5
 --------------------------------------------------------------
-Aleksandra K :: 
+Aleksandra K :: Added Student.java and 5 subclasses (Goth, Thespian, Nerd, Weirdo, Athlete); updated proposal. 
 Shafali G :: <Thing member did.>
 Rohan A :: Set up class Woo, discuss proposal with team.
 ==============================================================
 
 2018-1-4
 --------------------------------------------------------------
-Aleksandra K :: 
+Aleksandra K :: Worked on proposal and sketched uml diagram
 Shafali G :: <Thing member did.>
 Rohan A :: Worked on inheritance tree, pushed uml.pdf to repo.
 ==============================================================
@@ -102,7 +102,8 @@ Rohan A :: Worked on proposal, converted into bulleted form and expanded on meth
 
 2018-1-2
 --------------------------------------------------------------
-Aleksandra K :: <Thing member did.>
+Aleksandra K :: 
 Shafali G :: <Thing member did.>
 Rohan A :: Accepted GitHub request, changed name of pdf to proposal. Worked on proposal in Dojo.
 ==============================================================
+
