@@ -1,5 +1,5 @@
 theResistance
-Shafali Gupta, Aleksandra Koroza, Rohan Ahmmed
+Shafali Gupta, Aleksandra Koroza, Rohan Ahammed
 period 08
 
 - plan scenarios for each "type" of Student
@@ -7,4 +7,14 @@ period 08
   - make the questions for the quiz
   - create an array to store user input from the quiz
   - conditionals to determine the "type" of person
-- 
+- set up class Student and the outlines of methods in the superclass
+- write out scenarios for each type of Student
+- Modify superclasses to represent each of the different scenarios
+- Complete one subclass(Goth) and test with driver file
+- Write subsequent subclasses and continue testing with driver file
+- Update uml diagram and flowchart as necessary
+- After driver is deemed functional, stretch. Explore csv file.
+- Implement csv file score saving
+- Retest
+- Robustify.
+- Retest
