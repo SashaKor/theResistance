@@ -2,7 +2,7 @@
 
 ## Shafali Gupta, Aleksandra Koroza, Rohan Ahammed
 
-## OUR PROJECT:
+## Our Project:
 
 This is a role-playing, text-based game that plays off of social classes in high school. Each player is a "type" of person (a part of a social class). They will complete tasks and simulate the actions of the type of person they are. The player is judged by how well they are at becoming the type they have been selected to be.
 
