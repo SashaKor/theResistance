@@ -126,6 +126,6 @@ public class Woo{
 	Student user = new Student(); 
 	game.newGame();
 	game.quiz(); 
-	//System.out.println(user._friendCnt); 
+	System.out.println(user._friendCnt); 
     }//end of main method
 }//end of public class Woo
