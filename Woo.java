@@ -102,7 +102,7 @@ public class Woo{
 	}
 	else if(maxInd == 2){
 	    System.out.println("Congrats! You're a Thespian!");
-	    Student user = new Thespain(); 
+	    Student user = new Thespian(); 
 	}
 	else if(maxInd == 3){
 	    System.out.println("Congrats! You're a Nerd!");
