@@ -5,18 +5,22 @@ public class Woo{
     int day =0;
     boolean gameOver = false;
     int eventCtr = 0;
-
+    Student user; 
     public void newGame(){
 	System.out.println("Welcome to High School 2.0");
-	quiz();
+	//	quiz();
     }
 	
-    public static void quiz(){
+    public void quiz(){
 	int[] typeStud = new int[5]; //goth, athlete, thespian, nerd, weirdo
-	int userIn = 0; 
+	int userIn = 0;
+	String userStr = ""; 
 	System.out.println("Hey there! Are you excited to be in High School?");
 	//	System.out.println("Well get ready!");
 	System.out.println("We are gonna get you ready by choosing who you're going to be!");
+	System.out.println("But let's get your name before we transform you");
+	userStr = Keyboard.readString();
+	
 	System.out.println("If you could go somewhere right now, where would you go?" + "\n" +
 			   "1) the cemetery" + "\n" + //goth
 			   "2) the gym" + "\n" + //athlete
@@ -94,23 +98,23 @@ public class Woo{
 
 	if (maxInd == 0){
 	    System.out.println("Congrats! You're a Goth!");
-	    Student user = new Goth(); 
+	    user = new Goth(userStr); 
 	}
 	else if(maxInd == 1){
 	    System.out.println("Congrats! You're an Athlete!");
-	    Student user = new Athlete(); 
+	     user = new Athlete(userStr); 
 	}
 	else if(maxInd == 2){
 	    System.out.println("Congrats! You're a Thespian!");
-	    Student user = new Thespian(); 
+	     user = new Thespian(userStr); 
 	}
 	else if(maxInd == 3){
 	    System.out.println("Congrats! You're a Nerd!");
-	    Student user = new Nerd(); 
+	     user = new Nerd(userStr); 
 	}	
-	else if(maxInd ==4){
+	else{
 	    System.out.println("Congrats! You're a Weirdo!");
-	    Student user = new Weirdo(); 
+	     user = new Weirdo(userStr); 
 	}
 	
 	
@@ -119,6 +123,9 @@ public class Woo{
     
     public static void main(String[] args){
 	Woo game = new Woo();
-	game.newGame();  
+	Student user = new Student(); 
+	game.newGame();
+	game.quiz(); 
+	//System.out.println(user._friendCnt); 
     }//end of main method
 }//end of public class Woo

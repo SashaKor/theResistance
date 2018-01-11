@@ -22,6 +22,26 @@ public class Student{
     public String _name;
 
 
+    //default constructor
+   
+    public Student(){
+	_socStat = 0;
+	_intelligence = 0;
+	_mentHealth = 0;
+	_physHealth = 0;
+	_friendCnt = 0;
+	_popularity = 0;
+    }
+    public Student (String name){
+	_socStat = 0;
+	_intelligence = 0;
+	_mentHealth = 0;
+	_physHealth = 0;
+	_friendCnt = 0;
+	_popularity = 0;
+	_name = name;
+    }
+
     //~~~~~~~~~~~~~~~~~~~~Mutators~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     public void changeSocStat(int change){
