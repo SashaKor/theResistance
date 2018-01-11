@@ -93,20 +93,26 @@ public class Woo{
 	}
 
 	if (maxInd == 0){
-	    System.out.println("Congrats! You're a Goth!"); 
+	    System.out.println("Congrats! You're a Goth!");
+	    Student user = new Goth(); 
 	}
 	else if(maxInd == 1){
 	    System.out.println("Congrats! You're an Athlete!");
+	    Student user = new Athlete(); 
 	}
 	else if(maxInd == 2){
 	    System.out.println("Congrats! You're a Thespian!");
+	    Student user = new Thespain(); 
 	}
 	else if(maxInd == 3){
 	    System.out.println("Congrats! You're a Nerd!");
+	    Student user = new Nerd(); 
 	}	
 	else if(maxInd ==4){
 	    System.out.println("Congrats! You're a Weirdo!");
+	    Student user = new Weirdo(); 
 	}
+	
 	
     }//end of quiz
 
