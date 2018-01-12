@@ -20,10 +20,12 @@ public class Student{
     public int _popularity;
     // name; used for user experience
     public String _name;
+    // track scenes for each day
+    public String[][] sceneDay;
 
 
     //default constructor
-   
+
     public Student(){
 	_socStat = 0;
 	_intelligence = 0;

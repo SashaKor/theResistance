@@ -1,26 +1,29 @@
 import cs1.Keyboard;
 public class Woo{
-    //import cs1.keyboard;
 
     int day =0;
     boolean gameOver = false;
-    int eventCtr = 0;
-    Student user; 
+    int eventCnt = 0;
+    Student user;
     public void newGame(){
 	System.out.println("Welcome to High School 2.0");
-	//	quiz();
+  quiz();
     }
-	
+/* =============================
+    quiz()- prints out intro lines that ask for the user's name
+            questions the user to determine their type
+            determines type and instantiates a Student of that class
+===============================*/
     public void quiz(){
 	int[] typeStud = new int[5]; //goth, athlete, thespian, nerd, weirdo
 	int userIn = 0;
-	String userStr = ""; 
+	String userStr = "";
 	System.out.println("Hey there! Are you excited to be in High School?");
 	//	System.out.println("Well get ready!");
 	System.out.println("We are gonna get you ready by choosing who you're going to be!");
 	System.out.println("But let's get your name before we transform you");
 	userStr = Keyboard.readString();
-	
+
 	System.out.println("If you could go somewhere right now, where would you go?" + "\n" +
 			   "1) the cemetery" + "\n" + //goth
 			   "2) the gym" + "\n" + //athlete
@@ -40,7 +43,7 @@ public class Woo{
 	}
 	else if(userIn == 4){
 	    typeStud[3] +=1;
-	}	
+	}
 	else if(userIn ==5){
 	    typeStud[4] +=1;
 	}
@@ -62,7 +65,7 @@ public class Woo{
 	}
 	else if(userIn == 4){
 	    typeStud[0] +=1;
-	}	
+	}
 	else if(userIn ==5){
 	    typeStud[4] +=1;
 	}
@@ -84,7 +87,7 @@ public class Woo{
 	}
 	else if(userIn == 4){
 	    typeStud[0] +=1;
-	}	
+	}
 	else if(userIn ==5){
 	    typeStud[2] +=1;
 	}
@@ -98,34 +101,47 @@ public class Woo{
 
 	if (maxInd == 0){
 	    System.out.println("Congrats! You're a Goth!");
-	    user = new Goth(userStr); 
+	    user = new Goth(userStr);
 	}
 	else if(maxInd == 1){
 	    System.out.println("Congrats! You're an Athlete!");
-	     user = new Athlete(userStr); 
+	     user = new Athlete(userStr);
 	}
 	else if(maxInd == 2){
 	    System.out.println("Congrats! You're a Thespian!");
-	     user = new Thespian(userStr); 
+	     user = new Thespian(userStr);
 	}
 	else if(maxInd == 3){
 	    System.out.println("Congrats! You're a Nerd!");
-	     user = new Nerd(userStr); 
-	}	
+	     user = new Nerd(userStr);
+	}
 	else{
 	    System.out.println("Congrats! You're a Weirdo!");
-	     user = new Weirdo(userStr); 
+	     user = new Weirdo(userStr);
 	}
-	
-	
     }//end of quiz
+/*=======================
+  setDay() - if 5 events are done, new day
+  post Cond : resets eventCnt to zero for new Day
+  =======================*/
+    public void setDay(){
+      if (eventCnt % 5 == 0){
+        day += 1;
+      }
+      eventCnt = 0;
+    }
 
-    
+    public static boolean playTurn(){
+      return true; 
+    }
+
+
+
     public static void main(String[] args){
 	Woo game = new Woo();
-	Student user = new Student(); 
+	Student user = new Student();
 	game.newGame();
-	game.quiz(); 
-	System.out.println(user._friendCnt); 
+
+	System.out.println(user._friendCnt);
     }//end of main method
 }//end of public class Woo
