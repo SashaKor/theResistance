@@ -203,8 +203,6 @@ else if(userIn ==5){
       return true;
     }
 
-
-
     public static void main(String[] args){
 	Woo game = new Woo();
 	Student user = new Student();
