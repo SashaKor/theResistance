@@ -91,8 +91,76 @@ public class Woo{
 	else if(userIn ==5){
 	    typeStud[2] +=1;
 	}
-	//find the max of the array
 
+  System.out.println("You're at your locker, getting your books and a group of people dressed in black laugh at you while passing. What do you do?" + "\n" +
+    "1) punch them" + "\n" + //Athlete
+    "2) make some witty remark" + "\n" + //thespian
+    "3) conjure up black magic" + "\n" + //Goth
+    "4) start laughing hysterically" + "\n" + //weirdo
+    "5) bury your face in your books" + "\n"); //nerd
+  userIn = Keyboard.readInt(); //goth, athlete, thespian, nerd, weirdo
+  if (userIn == 1){
+    typeStud[1] +=1;
+  }
+  else if(userIn == 2){
+    typeStud[2] +=1;
+  }
+  else if(userIn == 3){
+    typeStud[0] +=1;
+  }
+  else if(userIn == 4){
+    typeStud[4] +=1;
+  }
+  else if(userIn ==5){
+    typeStud[3] +=1;
+  }
+
+System.out.println("Some people wearing black pass by you. What do you do? \n" +
+"1) I'm one of them \n" + //Goth
+"2) start crying \n" + //Weirdo
+"3) tell them that we only percieve color because of light \n" + //nerd
+"4) gossip loudly about them \n" + //Athlete
+"5) tell them about the emotional connection directors associate the color black with \n" ); // Thespian
+userIn = Keyboard.readInt(); //goth, athlete, thespian, nerd, weirdo
+if (userIn == 1){
+  typeStud[0] +=1;
+}
+else if(userIn == 2){
+  typeStud[4] +=1;
+}
+else if(userIn == 3){
+  typeStud[3] +=1;
+}
+else if(userIn == 4){
+  typeStud[1] +=1;
+}
+else if(userIn ==5){
+  typeStud[2] +=1;
+}
+
+System.out.println("You turn on the TV. What channel is on? \n" +
+"1) NFL \n" + //Athlete
+"2) Death TV \n" + //Goth
+"3) Theater Television Network \n" + //Thespian
+"4) The Discovery Channel \n" + //Nerd
+"5) Weird TV" ); //Weirdo
+userIn = Keyboard.readInt(); //goth, athlete, thespian, nerd, weirdo
+if (userIn == 1){
+  typeStud[1] +=1;
+}
+else if(userIn == 2){
+  typeStud[0] +=1;
+}
+else if(userIn == 3){
+  typeStud[2] +=1;
+}
+else if(userIn == 4){
+  typeStud[3] +=1;
+}
+else if(userIn ==5){
+  typeStud[4] +=1;
+}
+	//find the max of the array
 	int maxInd = 0;
 	for( int i = 0; i< typeStud.length; i++){
 	    if (typeStud[maxInd] < typeStud[i]){
@@ -132,7 +200,7 @@ public class Woo{
     }
 
     public static boolean playTurn(){
-      return true; 
+      return true;
     }
 
 
