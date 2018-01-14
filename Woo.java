@@ -208,6 +208,6 @@ else if(userIn ==5){
 	Student user = new Student();
 	game.newGame();
 
-	System.out.println(user._friendCnt);
+	System.out.println(user._name);
     }//end of main method
 }//end of public class Woo
