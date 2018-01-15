@@ -174,7 +174,7 @@ for( int i = 0; i< typeStud.length; i++){
 	maxInd = i; }
 }
 
-type=maxInd; 
+type=maxInd;
     }//end of quiz
 
     /*=======================
@@ -194,7 +194,7 @@ type=maxInd;
 	int i= (int)(Math.random()*4);
 	String used= "";
 	int userIn= 0;
-	
+
 	if (day==1){
 	    System.out.println( user.sceneDay1[i]);
 	    System.out.println("Please input the number that matches your response:");
@@ -222,14 +222,36 @@ type=maxInd;
 	}
 
 	else if (day==2){
-	    
+
 	    System.out.println( user.sceneDay2[i]);
 	    System.out.println("Please input the integer value of your response:");
+      userIn = Keyboard.readInt();
+
+      if(userIn == 1){
+        user.changeIntel(-2);
+        user.changeSocStat(1);
+        }
+      else if (userIn == 2){
+        user.changeMentHealth(-2);
+        user.changePhysHealth(1);
+        }
+      else if (userIn == 3){
+        user.changePopularity(3);
+        user.changePhysHealth(-2);
+      }
 	}
 
 	else if (day==3){
 	    System.out.println( user.sceneDay3[i]);
 	    System.out.println("Please input the integer value of your response:");
+      userIn = Keyboard.readInt();
+
+      if (userIn == 1){
+        user.changeIntel(-1);
+        user.changeFriendCnt(1);
+        changePhysHealth(2);
+        changeSocStat(1);
+      }
 	}
 
 	else{
@@ -239,7 +261,7 @@ type=maxInd;
 
 	eventCnt+=1;
 
-	
+
     }
 
     /*==========================================
@@ -250,7 +272,7 @@ type=maxInd;
 	System.out.println("bye felicia");
     }
 
-    
+
     public static void main(String[] args){
 	Woo game = new Woo();
 	Student user = new Student();
@@ -260,28 +282,28 @@ type=maxInd;
 	if (game.type == 0){
 	    user= new Goth(game.userStr);
 	    System.out.println("Congrats " + user._name+ "! You're a Goth!\n");
-	    
+
 	}
 	else if(game.type == 1){
 	    user = new Athlete(game.userStr);
 	    System.out.println("Congrats " +user._name+ "! You're an Athlete!\n");
-	    
+
 	}
 	else if(game.type == 2){
 	    user = new Thespian(game.userStr);
 	    System.out.println("Congrats " + user._name + "! You're a Thespian!\n");
-	    
+
 	}
 	else if(game.type == 3){
 	    user = new Nerd(game.userStr);
 	    System.out.println("Congrats " + user._name + "! You're a Nerd!\n");
-	  
+
 	}
 	else{
 	    user = new Weirdo(game.userStr);
 	    System.out.println("Congrats " + user._name + "! You're a Weirdo!\n");
-	 
-	     
+
+
 	}
 
 	//gameplay
@@ -294,6 +316,6 @@ type=maxInd;
 	}
 	System.out.println(user._mentHealth);
 
-	
+
     }//end of main method
 }//end of public class Woo
