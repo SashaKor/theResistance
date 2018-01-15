@@ -4,7 +4,6 @@ public class Woo{
     int day =1;
     boolean gameOver = false;
     int eventCnt = 0;
-    //Student user;
     String userStr = "";
     int type;
 
@@ -190,7 +189,7 @@ type=maxInd;
       =======================*/
 
     public void playTurn(Student user){
-	int i= (int)(Math.random()*7);
+	//int i= (int)(Math.random()*5);
 	String used= "";
 	int userIn= 0;
 	
@@ -200,7 +199,20 @@ type=maxInd;
 	    userIn= Keyboard.readInt();
 
 	    if (userIn==1){
-		// raise mental health
+		user.changePopularity(1);
+		user.changeSocStat(1);
+
+		System.out.println("Okay! Your popularity is now: "+ user._popularity+". Your Social Status is now:"+ user._socStat);
+	    }
+
+	    else if (userIn==2){
+		user.changePopularity(1);
+		user.changeMentHealth(-1);
+		user.change
+	    }
+
+	    else {
+
 	    }
 
 	    //while (){}
@@ -233,8 +245,9 @@ type=maxInd;
 	    System.out.println("Please input the integer value of your response:");
 	}
 
-	System.out.println("bob");
 	eventCnt+=1;
+
+	
     }
 
     /*==========================================
@@ -255,28 +268,27 @@ type=maxInd;
 	if (game.type == 0){
 	    user= new Goth(game.userStr);
 	    System.out.println("Congrats " + user._name+ "! You're a Goth!");
-	    //user= new Goth(game.userStr);
+	    
 	}
 	else if(game.type == 1){
 	    user = new Athlete(game.userStr);
 	    System.out.println("Congrats " +user._name+ "! You're an Athlete!");
-	    //user = new Athlete(game.userStr);
+	    
 	}
 	else if(game.type == 2){
 	    user = new Thespian(game.userStr);
 	    System.out.println("Congrats " + user._name + "! You're a Thespian!");
-	    //user = new Thespian(game.userStr);
+	    
 	}
 	else if(game.type == 3){
 	    user = new Nerd(game.userStr);
 	    System.out.println("Congrats " + user._name + "! You're a Nerd!");
-	    //user = new Nerd(game.userStr);
-	     //System.out.println(user._mentHealth);
+	  
 	}
 	else{
 	    user = new Weirdo(game.userStr);
 	    System.out.println("Congrats " + user._name + "! You're a Weirdo!");
-	    //user = new Weirdo(game.userStr);
+	 
 	     
 	}
 
@@ -284,7 +296,9 @@ type=maxInd;
 
 	while (game.day< 8){
 	    game.playTurn(user);
-	    game.day+=1;
+	    if (game.changeDay()){
+		game.day+=1;
+	    }
 	}
 	System.out.println(user._mentHealth);
 
