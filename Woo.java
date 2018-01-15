@@ -191,38 +191,61 @@ type=maxInd;
 
     public void playTurn(Student user){
 	int i= (int)(Math.random()*7);
+	String used= "";
 	int userIn= 0;
 	
 	if (day==1){
 	    System.out.println( user.sceneDay1[i]);
-	    userIn= Keyboard.readInt();			
+	    System.out.println("Please input the integer value of your response:");
+	    userIn= Keyboard.readInt();
+
+	    if (userIn==1){
+		// raise mental health
+	    }
+
+	    //while (){}
 	}
 
 	else if (day==2){
+	    
 	    System.out.println( user.sceneDay2[i]);
+	    System.out.println("Please input the integer value of your response:");
 	}
 
 	else if (day==3){
 	    System.out.println( user.sceneDay3[i]);
+	    System.out.println("Please input the integer value of your response:");
 	}
 	else if (day==4){
 	    System.out.println( user.sceneDay4[i]);
+	    System.out.println("Please input the integer value of your response:");
 	}
 	else if (day==5){
 	    System.out.println( user.sceneDay5[i]);
+	    System.out.println("Please input the integer value of your response:");
 	}
 	else if (day==6){
 	    System.out.println( user.sceneDay6[i]);
+	    System.out.println("Please input the integer value of your response:");
 	}
 	else{
 	    System.out.println( user.sceneDay7[i]);
+	    System.out.println("Please input the integer value of your response:");
 	}
 
 	System.out.println("bob");
 	eventCnt+=1;
     }
 
+    /*==========================================
+      endGame()--------- concludes game and prints score
+      postCond = ends game
+     =======================================*/
+    public void endGame(){
+	System.out.println("bye felicia");
+    }
 
+    
     public static void main(String[] args){
 	Woo game = new Woo();
 	Student user = new Student();
