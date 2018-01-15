@@ -176,11 +176,11 @@ type=maxInd;
     }//end of quiz
 
     /*=======================
-      setDay() - if 5 events are done, new day
+      setDay() - if 4 events are done, new day
       post Cond : resets eventCnt to zero for new Day
   =======================*/
     public boolean changeDay(){
-	return eventCnt%5==0;
+	return eventCnt%4==0;
     }
 
     /*=========================
@@ -189,7 +189,7 @@ type=maxInd;
       =======================*/
 
     public void playTurn(Student user){
-	int i= (int)(Math.random()*5);
+	int i= (int)(Math.random()*4);
 	String used= "";
 	int userIn= 0;
 	
@@ -295,7 +295,7 @@ type=maxInd;
 
 	//gameplay
 
-	while (game.day< 8){
+	while (game.day< 5){
 	    game.playTurn(user);
 	    if (game.changeDay()){
 		game.day+=1;
