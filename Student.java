@@ -21,13 +21,10 @@ public class Student{
     // name; used for user experience
     public String _name;
     // track scenes for each day
-	String[] sceneDay1 = new String[6];
-        String[] sceneDay2 = new String[6];
-        String[] sceneDay3 = new String[6];
-        String[] sceneDay4 = new String[6];
-	String[] sceneDay5 = new String[6];
-        String[] sceneDay6 = new String[6];
-	String[] sceneDay7 = new String[6];    
+	String[] sceneDay1 = new String[5];
+        String[] sceneDay2 = new String[5];
+        String[] sceneDay3 = new String[5];
+        String[] sceneDay4 = new String[5];   
 
     //default constructor
 
@@ -39,14 +36,11 @@ public class Student{
 	_friendCnt = 0;
 	_popularity = 0;
 
-	for (int i=0; i<6; i++){
+	for (int i=0; i<5; i++){
 	    sceneDay1[i]="a";
 	    sceneDay2[i]="a";
 	    sceneDay3[i]="a";
 	    sceneDay4[i]="a";
-	    sceneDay5[i]="a";
-	    sceneDay6[i]="a";
-	    sceneDay7[i]="a";
 	}
     }
     public Student (String name){
@@ -58,15 +52,13 @@ public class Student{
 	_popularity = 0;
 	_name = name;
 
-	for (int i=0; i<6; i++){
+	for (int i=0; i<5; i++){
 	    sceneDay1[i]="a";
 	    sceneDay2[i]="a";
 	    sceneDay3[i]="a";
 	    sceneDay4[i]="a";
-	    sceneDay5[i]="a";
-	    sceneDay6[i]="a";
-	    sceneDay7[i]="a";
-	}}
+	}
+    }
 
 	//~~~~~~~~~~~~~~~~~~~~Mutators~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
