@@ -71,12 +71,6 @@ public class Goth extends Student{
 	sceneDay4[3]= "It’s the school’s weekly roast session. It’s your turn to make a roast. Do you:\n1) make fun of your nerd friends for being study nuts \n2) make the best roasts of the week \n3) pretend to trip and fall in order to make everyone laugh";
 	sceneDay4[4]= "It’s party time! Your friends are throwing the biggest party of the week! Do you want to: \n1) do your overdue book report \n2) you go, end up drunk and be the most annoying person at the party \n3) create your own party at your house and invite all your goth friends and a couple of new people";
 
-	//day5
-	sceneDay5[0]= " goth ";
-	sceneDay5[1]= " goth ";
-	sceneDay5[2]= " goth ";
-	sceneDay5[3]= " goth ";
-	sceneDay5[4]= " goth ";
     }    
 
 }

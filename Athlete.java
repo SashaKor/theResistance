@@ -66,15 +66,7 @@ public class Athlete extends Student{
 	sceneDay4[1]= "You finished your homework early today. Do you: \n1) spend the rest of your night reading a good book about weight training \n2) you decide to sleep \n3) hang out at your friend’s house";
 	sceneDay4[2]= "It’s time for P.E. class! Do you: \n1) decide to cut the class and do something else \n2) make fun of all of the people who can’t run a lap \n3) you take the time to do yoga and find your inner self";
 	sceneDay4[3]= "It’s the school’s weekly roast session. It’s your turn to make a roast. Do you:\n1) make fun of your nerd friends for being study nuts \n2) make the best roasts of the week \n3) pretend to trip and fall in order to make everyone laugh";
-	sceneDay4[4]= "It’s party time! Your friends are throwing the biggest party of the week! Do you want to: \n1) do your overdue book report \n2) you go, end up drunk and be the most annoying person at the party \n3) create your own party at your house and invite all your athlete friends and a couple of new people";
-
-	//day5
-	sceneDay5[0]= " athlete ";
-	sceneDay5[1]= " athlete ";
-	sceneDay5[2]= " athlete ";
-	sceneDay5[3]= " athlete ";
-	sceneDay5[4]= " athlete ";
-	
+	sceneDay4[4]= "It’s party time! Your friends are throwing the biggest party of the week! Do you want to: \n1) do your overdue book report \n2) you go, end up drunk and be the most annoying person at the party \n3) create your own party at your house and invite all your athlete friends and a couple of new people";	
     }
 }
 	
