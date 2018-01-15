@@ -1,7 +1,7 @@
 import cs1.Keyboard;
 public class Woo{
 
-    int day =0;
+    int day =1;
     boolean gameOver = false;
     int eventCnt = 0;
     //Student user;
@@ -28,7 +28,7 @@ public class Woo{
 	System.out.println("We are gonna get you ready by choosing who you're going to be!");
 	System.out.println("But let's get your name before we transform you");
 	userStr = Keyboard.readString();
-	//System.out.println(userStr);
+	System.out.println(userStr);
 	System.out.println("If you could go somewhere right now, where would you go?" + "\n" +
 			   "1) the cemetery" + "\n" + //goth
 			   "2) the gym" + "\n" + //athlete
@@ -180,15 +180,46 @@ type=maxInd;
       setDay() - if 5 events are done, new day
       post Cond : resets eventCnt to zero for new Day
   =======================*/
-    public void setDay(){
-      if (eventCnt % 5 == 0){
-        day += 1;
-      }
-      eventCnt = 0;
+    public boolean changeDay(){
+	return eventCnt%5==0;
     }
 
-    public static boolean playTurn(){
-      return true;
+    /*=========================
+      playTurn- chooses scene and mutates event counter
+      post Cond- event += 1
+      =======================*/
+
+    public void playTurn(Student user){
+	int i= (int)(Math.random()*7);
+	int userIn= 0;
+	
+	if (day==1){
+	    System.out.println( user.sceneDay1[i]);
+	    userIn= Keyboard.readInt();			
+	}
+
+	else if (day==2){
+	    System.out.println( user.sceneDay2[i]);
+	}
+
+	else if (day==3){
+	    System.out.println( user.sceneDay3[i]);
+	}
+	else if (day==4){
+	    System.out.println( user.sceneDay4[i]);
+	}
+	else if (day==5){
+	    System.out.println( user.sceneDay5[i]);
+	}
+	else if (day==6){
+	    System.out.println( user.sceneDay6[i]);
+	}
+	else{
+	    System.out.println( user.sceneDay7[i]);
+	}
+
+	System.out.println("bob");
+	eventCnt+=1;
     }
 
 
@@ -197,6 +228,7 @@ type=maxInd;
 	Student user = new Student();
 	game.newGame();
 
+	//instantiating as a type of high-schooler
 	if (game.type == 0){
 	    user= new Goth(game.userStr);
 	    System.out.println("Congrats " + user._name+ "! You're a Goth!");
@@ -225,6 +257,14 @@ type=maxInd;
 	     
 	}
 
+	//gameplay
+
+	while (game.day< 8){
+	    game.playTurn(user);
+	    game.day+=1;
+	}
 	System.out.println(user._mentHealth);
+
+	
     }//end of main method
 }//end of public class Woo
