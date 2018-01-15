@@ -41,7 +41,7 @@ public class Weirdo extends Student{
 	//day 1
 	sceneDay1[0]= "Today is the first cult meeting of the season! All of your friends are extremely hyped to attend the event. Do you want to: \n1) prepare the sacrifice \n2) attend and support your friends \n3) stay home in bed";
 
-	sceneDay1[1]="“It’s lunch time! You get to choose where you want to sit. Do you want to: \n1) sit with the other weirdos \n2) eat your lunch in the bathroom alone \n3) You don’t care where you sit";
+	sceneDay1[1]= "It’s lunch time! You get to choose where you want to sit. Do you want to: \n1) sit with the other weirdos \n2) eat your lunch in the bathroom alone \n3) You don’t care where you sit";
 
 	sceneDay1[2]="You have some extra time after school to do something. Do you want to: \n1) study for your algebra test \n2) decide to spend some time in rehab \n3) do some drugs at your friend’s house";
 
