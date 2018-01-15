@@ -9,7 +9,8 @@ public class Woo{
 
 
     public void newGame(){
-	System.out.println("Welcome to High School 2.0");
+	System.out.println("\t\tWelcome to High School 2.0!");
+	System.out.println("\t\t|-------------------------|");
 	quiz();
     }
 
@@ -25,15 +26,16 @@ public class Woo{
 	System.out.println("Hey there! Are you excited to be in High School?");
 	//	System.out.println("Well get ready!");
 	System.out.println("We are gonna get you ready by choosing who you're going to be!");
-	System.out.println("But let's get your name before we transform you");
+	System.out.println("But let's get your name before we transform you. Enter your first name:");
 	userStr = Keyboard.readString();
-	System.out.println(userStr);
-	System.out.println("If you could go somewhere right now, where would you go?" + "\n" +
+	System.out.println("Hi " + userStr + "!\n");
+	System.out.println("Answer these questions to discover what type of student you are! If you want to choose choice 3, type in the following: 3");
+	System.out.println("\nIf you could go somewhere right now, where would you go?" + "\n" +
 			   "1) the cemetery" + "\n" + //goth
 			   "2) the gym" + "\n" + //athlete
 			   "3) the theater" + "\n" + //thespain
 			   "4) the library" + "\n" + //nerd
-			   "5) the museum of noses" + "\n" //weirdo
+			   "5) the museum of noses" //weirdo
 			   );
 	userIn = Keyboard.readInt();
 	if (userIn == 1){
@@ -52,12 +54,12 @@ public class Woo{
 	    typeStud[4] +=1;
 	}
 
-	System.out.println("What's your favorite icecream favor?" + "\n" +
+	System.out.println("\nWhat's your favorite icecream favor?" + "\n" +
 			   "1) Rocky Road" + "\n" + //athlete
 			   "2) Vanilla" + "\n" + //nerd
 			   "3) Tuti Fruti" + "\n" + //thespain
 			   "4) Dark Mist" + "\n" + //goth
-			   "5) You don't like icecream" + "\n" ); //weirdo
+			   "5) You don't like icecream" ); //weirdo
 		userIn = Keyboard.readInt();
 	if (userIn == 1){
 	    typeStud[1] +=1;
@@ -74,12 +76,12 @@ public class Woo{
 	else if(userIn ==5){
 	    typeStud[4] +=1;
 	}
-		System.out.println("What's your favorite drink?" + "\n" +
+		System.out.println("\nWhat's your favorite drink?" + "\n" +
 			   "1) pickle juice" + "\n" + //weirdo
 			   "2) milk" + "\n" + //nerd
 			   "3) gatorade" + "\n" + //athlete
 			   "4) cranberry punch" + "\n" + //goth
-			   "5) water" + "\n" ); //thespain
+			   "5) water" ); //thespain
 		userIn = Keyboard.readInt();
 	if (userIn == 1){
 	    typeStud[4] +=1;
@@ -97,12 +99,12 @@ public class Woo{
 	    typeStud[2] +=1;
 	}
 
-  System.out.println("You're at your locker, getting your books and a group of people dressed in black laugh at you while passing. What do you do?" + "\n" +
+  System.out.println("\nYou're at your locker, getting your books and a group of people dressed in black laugh at you while passing. What do you do?" + "\n" +
     "1) punch them" + "\n" + //Athlete
     "2) make some witty remark" + "\n" + //thespian
     "3) conjure up black magic" + "\n" + //Goth
     "4) start laughing hysterically" + "\n" + //weirdo
-    "5) bury your face in your books" + "\n"); //nerd
+    "5) bury your face in your books" ); //nerd
   userIn = Keyboard.readInt(); //goth, athlete, thespian, nerd, weirdo
   if (userIn == 1){
     typeStud[1] +=1;
@@ -120,12 +122,12 @@ public class Woo{
     typeStud[3] +=1;
   }
 
-System.out.println("Some people wearing black pass by you. What do you do? \n" +
+System.out.println("\nSome people wearing black pass by you. What do you do? \n" +
 "1) I'm one of them \n" + //Goth
 "2) start crying \n" + //Weirdo
 "3) tell them that we only percieve color because of light \n" + //nerd
 "4) gossip loudly about them \n" + //Athlete
-"5) tell them about the emotional connection directors associate the color black with \n" ); // Thespian
+"5) tell them about the emotional connection directors associate the color black with" ); // Thespian
 userIn = Keyboard.readInt(); //goth, athlete, thespian, nerd, weirdo
 if (userIn == 1){
   typeStud[0] +=1;
@@ -143,7 +145,7 @@ else if(userIn ==5){
   typeStud[2] +=1;
 }
 
-System.out.println("You turn on the TV. What channel is on? \n" +
+System.out.println("\nYou turn on the TV. What channel is on? \n" +
 "1) NFL \n" + //Athlete
 "2) Death TV \n" + //Goth
 "3) Theater Television Network \n" + //Thespian
@@ -195,7 +197,7 @@ type=maxInd;
 	
 	if (day==1){
 	    System.out.println( user.sceneDay1[i]);
-	    System.out.println("Please input the integer value of your response:");
+	    System.out.println("Please input the number that matches your response:");
 	    userIn= Keyboard.readInt();
 
 	    if (userIn==1){
@@ -229,20 +231,9 @@ type=maxInd;
 	    System.out.println( user.sceneDay3[i]);
 	    System.out.println("Please input the integer value of your response:");
 	}
-	else if (day==4){
-	    System.out.println( user.sceneDay4[i]);
-	    System.out.println("Please input the integer value of your response:");
-	}
-	else if (day==5){
-	    System.out.println( user.sceneDay5[i]);
-	    System.out.println("Please input the integer value of your response:");
-	}
-	else if (day==6){
-	    System.out.println( user.sceneDay6[i]);
-	    System.out.println("Please input the integer value of your response:");
-	}
+
 	else{
-	    System.out.println( user.sceneDay7[i]);
+	    System.out.println( user.sceneDay4[i]);
 	    System.out.println("Please input the integer value of your response:");
 	}
 
@@ -268,27 +259,27 @@ type=maxInd;
 	//instantiating as a type of high-schooler
 	if (game.type == 0){
 	    user= new Goth(game.userStr);
-	    System.out.println("Congrats " + user._name+ "! You're a Goth!");
+	    System.out.println("Congrats " + user._name+ "! You're a Goth!\n");
 	    
 	}
 	else if(game.type == 1){
 	    user = new Athlete(game.userStr);
-	    System.out.println("Congrats " +user._name+ "! You're an Athlete!");
+	    System.out.println("Congrats " +user._name+ "! You're an Athlete!\n");
 	    
 	}
 	else if(game.type == 2){
 	    user = new Thespian(game.userStr);
-	    System.out.println("Congrats " + user._name + "! You're a Thespian!");
+	    System.out.println("Congrats " + user._name + "! You're a Thespian!\n");
 	    
 	}
 	else if(game.type == 3){
 	    user = new Nerd(game.userStr);
-	    System.out.println("Congrats " + user._name + "! You're a Nerd!");
+	    System.out.println("Congrats " + user._name + "! You're a Nerd!\n");
 	  
 	}
 	else{
 	    user = new Weirdo(game.userStr);
-	    System.out.println("Congrats " + user._name + "! You're a Weirdo!");
+	    System.out.println("Congrats " + user._name + "! You're a Weirdo!\n");
 	 
 	     
 	}
