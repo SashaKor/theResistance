@@ -33,6 +33,7 @@ public class Student{
 	_physHealth = 0;
 	_friendCnt = 0;
 	_popularity = 0;
+	_name ="lol";
     }
     public Student (String name){
 	_socStat = 0;
