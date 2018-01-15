@@ -189,7 +189,7 @@ type=maxInd;
       =======================*/
 
     public void playTurn(Student user){
-	//int i= (int)(Math.random()*5);
+	int i= (int)(Math.random()*5);
 	String used= "";
 	int userIn= 0;
 	
@@ -202,16 +202,17 @@ type=maxInd;
 		user.changePopularity(1);
 		user.changeSocStat(1);
 
-		System.out.println("Okay! Your popularity is now: "+ user._popularity+". Your Social Status is now:"+ user._socStat);
+		System.out.println("Okay! Your popularity is now: "+ user._popularity+". Your Social Status is now: "+ user._socStat);
 	    }
 
 	    else if (userIn==2){
 		user.changePopularity(1);
 		user.changeMentHealth(-1);
-		user.change
+		user.changeFriendCnt(1);
 	    }
 
 	    else {
+		user.changeIntel(-1);
 
 	    }
 
