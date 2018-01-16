@@ -1,4 +1,4 @@
-import cs1.Keyboard;
+import cs1.Keyboard;//readInt is changed slightly to not return a MIN_INDEX print msg
 public class Woo{
 
     int day =1;
