@@ -23,7 +23,7 @@ public class Woo{
 	
 	
     public void newGame(){
-	System.out.println("\t\tWelcome to High School 2.0!");
+	System.out.println("\n\t\t\033[1mWelcome to High School 2.0!\033[0m");
 	System.out.println("\t\t|-------------------------|");
 	quiz();
     }
@@ -37,13 +37,13 @@ public class Woo{
 	int[] typeStud = new int[5]; //goth, athlete, thespian, nerd, weirdo
 	int userIn = 0;
         //String userStr = "";
-	System.out.println("Hey there! Are you excited to be in High School?");
+	System.out.println("\nHey there! Are you excited to be in High School?");
 	//	System.out.println("Well get ready!");
 	System.out.println("We are gonna get you ready by choosing who you're going to be!");
 	System.out.println("But let's get your name before we transform you. Enter your first name:");
 	userStr = Keyboard.readString();
 	System.out.println("Hi " + userStr + "!\n");
-	System.out.println("Answer these questions to discover what type of student you are! If you want to choose choice 3, type in the following: 3");
+	System.out.println("Answer these questions to discover what type of student you are! If you want to choose choice 3, type in the following: \033[1m 3 \033[0m");
 	System.out.println("\nIf you could go somewhere right now, where would you go?" + "\n" +
 			   "1) the cemetery" + "\n" + //goth
 			   "2) the gym" + "\n" + //athlete
