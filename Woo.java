@@ -192,13 +192,20 @@ type=maxInd;
 
     public void playTurn(Student user){
 	int i= (int)(Math.random()*4);
-	String used= "";
 	int userIn= 0;
+	String used="";
+	
+	while (user.sceneDay1[i].equals("")){
+	    i= (int)(Math.random()*4);
+	}
 
 	if (day==1){
+	    
 	    System.out.println( user.sceneDay1[i]);
+	    user.sceneDay1[i]="";
 	    System.out.println("Please input the number that matches your response:");
 	    userIn= Keyboard.readInt();
+	    used+=userIn+" ";
 
       if(i ==0){
 
@@ -206,7 +213,7 @@ type=maxInd;
 		user.changePopularity(1);
 		user.changeSocStat(1);
 
-		System.out.println("Okay! Your popularity is now: "+ user._popularity+". Your Social Status is now: "+ user._socStat);
+		//System.out.println("Okay! Your popularity is now: "+ user._popularity+". Your Social Status is now: "+ user._socStat);
 	    }
 
 	    else if (userIn==2){
@@ -269,13 +276,15 @@ type=maxInd;
       }
     } // end i=4
 
-    }// end day 1
+	    }// end day 1
+	
 
 	else if (day==2){
 
 	    System.out.println( user.sceneDay2[i]);
 	    System.out.println("Please input the integer value of your response:");
       userIn = Keyboard.readInt();
+      user.sceneDay1[i]="";
 
       if (i ==0){
       if(userIn == 1){
@@ -347,6 +356,8 @@ type=maxInd;
 	    System.out.println( user.sceneDay3[i]);
 	    System.out.println("Please input the integer value of your response:");
       userIn = Keyboard.readInt();
+      user.sceneDay1[i]="";
+      
       if(i ==0){
       if (userIn == 1){
         user.changeIntel(-2);
@@ -403,6 +414,7 @@ type=maxInd;
 	    System.out.println( user.sceneDay4[i]);
 	    System.out.println("Please input the integer value of your response:");
       userIn = Keyboard.readInt();
+      user.sceneDay1[i]="";
 
       if(i == 0){
       if(userIn == 1){
