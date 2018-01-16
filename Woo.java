@@ -527,11 +527,32 @@ public class Woo{
 	    System.out.println("Looks like you failed at being a high schooler. Don't worry, just blame it on Regina George");
 	}
 	System.out.println(user.printStats());
+	System.out.println("This is your score! ------>>>>"+score(user));
 	System.out.println("=====================================\n");
 	System.out.println("bye felicia");
     
     }
 
+    /*=========================================
+      clearScreen()-- aesthetic purposes
+      prints out 100 lines of empty space 
+      ================================*/
+    public static void clearScreen(){
+	int x= 0;
+	while(x<2){
+	    System.out.println();
+	    x++;
+	}
+
+    }
+        /*=========================================
+      score()-- used in endGame()
+      score calculated 
+      ================================*/
+    public static double score(Student user){
+	return (user._mentHealth +user._physHealth + user._intelligence + user._socStat + (user._popularity * 2));
+    }
+    
     public static void main(String[] args){
 	Woo game = new Woo();
 	Student user = new Student();
@@ -569,6 +590,18 @@ public class Woo{
 
 	while (game.day< 5 & user._mentHealth >0 & user._physHealth >0){
 	    game.playTurn(user);
+	    game.clearScreen();
+	    
+	    if (Math.random()<0.09){
+		System.out.println("Your mom is calling! She forgot the age of your younger sibling");
+		numberGame g = new numberGame (1, 20);
+
+		//start the game
+		g.play();
+		if (numberGame.att ==5){
+		    user._mentHealth-=3;}
+		
+	    }
 	    if (game.changeDay()){
 		game.day+=1;
 		if (game.day != 5){
