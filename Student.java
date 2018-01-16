@@ -100,11 +100,11 @@ public class Student{
 
     public String printStats(){
 	String result= "";
-	result+= "Social Status: " + _socStat;
-	result+= "Intelligence: " + _intelligence;
-	result+= "Mental Health: " + _mentHealth;
-	result+= "Physical Health: " + _physHealth;
-	result+= "Friend Count: " + _friendCnt;
+	result+= "Social Status: " + _socStat+ "\n";
+	result+= "Intelligence: " + _intelligence+"\n";
+	result+= "Mental Health: " + _mentHealth+"\n";
+	result+= "Physical Health: " + _physHealth+"\n";
+	result+= "Friend Count: " + _friendCnt+ "\n";
 	result+= "Popularity: " + _popularity;
 
 	return result;

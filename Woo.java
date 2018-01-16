@@ -543,16 +543,19 @@ type=maxInd;
 
 	//gameplay
 
-	while (game.day< 5){
+	while (game.day< 5 || user._mentHealth >0 || user._physHealth >0){
 	    game.playTurn(user);
 	    if (game.changeDay()){
 		game.day+=1;
 
 		System.out.println("=====================================");
 		System.out.println("You are now moving into day " + game.day+"!");
+		System.out.println(user.printStats());
 		System.out.println("=====================================");
 	    }
 	}
+	game.endGame();
+
 	System.out.println(user._mentHealth);
 
 
