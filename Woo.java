@@ -200,6 +200,8 @@ type=maxInd;
 	    System.out.println("Please input the number that matches your response:");
 	    userIn= Keyboard.readInt();
 
+      if(i ==0){
+
 	    if (userIn==1){
 		user.changePopularity(1);
 		user.changeSocStat(1);
@@ -208,18 +210,66 @@ type=maxInd;
 	    }
 
 	    else if (userIn==2){
-		user.changePopularity(1);
-		user.changeMentHealth(-1);
+//		user.changePopularity(1);
+		user.changeMentHealth(1);
 		user.changeFriendCnt(1);
 	    }
 
 	    else {
 		user.changeIntel(-1);
+}
+  }
 
-	    }
+  if (i ==1){
+    if (userIn ==1){
+      user.changePopularity(1); }
+      else if (userIn ==2){
+        user.changeMentHealth(-1); }
+        else if (userIn ==3){
+          user.changeFriendCnt(1);
+        }
+      } //end i=1
 
-	    //while (){}
-	}
+    if (i ==2){
+      if(userIn == 1){
+        user.changeIntel(1);
+        user.changeSocStat(-1);
+      }
+      else if (userIn ==2){
+        user.changePhysHealth(1);
+      }
+      else if (userIn ==3){
+        user.changeFriendCnt(1);
+        user.changeMentHealth(1);
+      }
+    }//end i=2
+
+    if(i ==3){
+      if(userIn == 1){
+        user.changePopularity(-1);
+      }
+      else if (userIn ==2){
+        user.changeMentHealth(-1);
+      }
+      else if (userIn ==3){
+        user.changeSocStat(1);
+        user.changePhysHealth(-1);
+      }
+    } // end i=3
+
+    if(i ==4){
+      if(userIn == 1){
+        user.changeIntel(2);
+      }
+      else if (userIn ==2){
+        user.changeSocStat(-2);
+      }
+      else if (userIn ==3){
+        user.changeFriendCnt(2);
+      }
+    } // end i=4
+
+    }// end day 1
 
 	else if (day==2){
 
@@ -227,6 +277,7 @@ type=maxInd;
 	    System.out.println("Please input the integer value of your response:");
       userIn = Keyboard.readInt();
 
+      if (i ==0){
       if(userIn == 1){
         user.changeIntel(-2);
         user.changeSocStat(1);
@@ -239,25 +290,180 @@ type=maxInd;
         user.changePopularity(3);
         user.changePhysHealth(-2);
       }
-	}
+	} //i =0
+      if (i ==1){
+      if(userIn == 1){
+        user.changePopularity(2);
+        }
+      else if (userIn == 2){
+        user.changeMentHealth(-1);
+        }
+      else if (userIn == 3){
+        user.changeFriendCnt(1);
+      }
+    } //i =1
+
+    if (i ==2){
+    if(userIn == 1){
+      user.changeIntel(1);
+      user.changeSocStat(1);
+      }
+    else if (userIn == 2){
+      user.changePhysHealth(1);
+      }
+    else if (userIn == 3){
+      user.changeFriendCnt(1);
+      user.changeMentHealth(1);
+    }
+  } //i =2
+
+  if (i ==3){
+  if(userIn == 1){
+    user.changeIntel(1);
+    user.changeSocStat(1);
+    }
+  else if (userIn == 2){
+    user.changePhysHealth(1);
+    }
+  else if (userIn == 3){
+    user.changeFriendCnt(1);
+    user.changeMentHealth(1);
+  }
+} //i =3
+    if (i ==4){
+    if(userIn == 1){
+      user.changeIntel(2);
+      }
+    else if (userIn == 2){
+      user.changeSocStat(-2);
+      }
+    else if (userIn == 3){
+      user.changeFriendCnt(2);
+    }
+  } //i =4
+} //end day 2
 
 	else if (day==3){
 	    System.out.println( user.sceneDay3[i]);
 	    System.out.println("Please input the integer value of your response:");
       userIn = Keyboard.readInt();
-
+      if(i ==0){
       if (userIn == 1){
-        user.changeIntel(-1);
-        user.changeFriendCnt(1);
-        changePhysHealth(2);
-        changeSocStat(1);
+        user.changeIntel(-2);
       }
-	}
+      if (userIn ==2){
+        user.changeFriendCnt(1);
+      }
+      if (userIn == 3){
+        user.changePhysHealth(2);
+        user.changeSocStat(-1);
+      }
+    } //end i = 0
+
+    if (i==1){
+      if(userIn ==1){
+        user.changeMentHealth(3);
+      }
+      else if(userIn ==2){
+        user.changePopularity(1);
+      }
+      else if(userIn == 3){
+        user.changeFriendCnt(-1);
+      }
+    } //end i= 1
+
+    if (i ==2){
+      if (userIn == 1){
+      user.changeIntel(1);
+      user.changeSocStat(-1);
+    }
+    if (userIn ==2){
+      user.changePhysHealth(1);
+    }
+    if (userIn == 3){
+      user.changeFriendCnt(1);
+      user.changeMentHealth(1);
+    }
+}
+    if (i ==3){
+      if (userIn ==1){
+        user.changeSocStat(1);
+      }
+      if (userIn ==2){
+        user.changeMentHealth(-2);
+      }
+      if (userIn == 3){
+        user.changePhysHealth(-1);
+
+      }
+    }
+	}//end day 3
 
 	else{
 	    System.out.println( user.sceneDay4[i]);
 	    System.out.println("Please input the integer value of your response:");
+      userIn = Keyboard.readInt();
+
+      if(i == 0){
+      if(userIn == 1){
+        user.changeSocStat(2);
+      }
+      if(userIn ==2){
+        user.changeMentHealth(1);
+      }
+      if (userIn ==3){
+        user.changePhysHealth(1);
+        user.changeFriendCnt(-3);
+      }
 	}
+      if (i == 1){
+        if(userIn ==1){
+          user.changeIntel(1);
+        }
+        if(userIn ==2){
+          user.changeMentHealth(3);
+        }
+        if (userIn ==3){
+          user.changeFriendCnt(1);
+        }
+      }// i =1
+      if (i ==2){
+      if(userIn ==1){
+      user.changePhysHealth(-1);
+      }
+      if (userIn ==2){
+        user.changeSocStat(1);
+      }
+      if (userIn ==3){
+        user.changeMentHealth(1);
+      }
+    }
+    if(i ==3){
+      if (userIn ==1){
+        user.changePopularity(2);
+        user.changeSocStat(-2);
+      }
+      if (userIn ==2){
+        user.changeMentHealth(-1);
+        user.changeMentHealth(3);
+      }
+      if(userIn ==3){
+        user.changePhysHealth(-1);
+        user.changeSocStat(1);
+      }
+    }
+    if (i ==4){
+      if (userIn ==1){
+        user.changeIntel(1);
+      }
+      if (userIn ==2){
+        user.changeSocStat(-3);
+      }
+      if(userIn ==3){
+        user.changeFriendCnt(2);
+      }
+    }
+} //day 4
 
 	eventCnt+=1;
 
