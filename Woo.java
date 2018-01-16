@@ -543,7 +543,7 @@ type=maxInd;
 
 	//gameplay
 
-	while (game.day< 5 || user._mentHealth >0 || user._physHealth >0){
+	while (game.day< 5 & user._mentHealth >0 & user._physHealth >0){
 	    game.playTurn(user);
 	    if (game.changeDay()){
 		game.day+=1;
@@ -559,5 +559,5 @@ type=maxInd;
 	System.out.println(user._mentHealth);
 
 
-    }//end of main method
+    }//end of main method <#
 }//end of public class Woo
