@@ -18,12 +18,13 @@ The biggest obstacle for us has been deciding the actual structure of the game a
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <
-Exceptions handling is still at a low at the moment. A String input where an int is expected crashes the whole game.
+Exceptions handling is still at a low at the moment. A String input where an int is expected crashes the whole game. (RESOLVED as of 1/15/18)
+Formatting of text, and how to make sure it fits in anyone's screen, and does not look like a block of text.
 >
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+We should not be afraid in making already written classes, like Keyboard, work for us by changing them. We also learned about how complex user error can get, and the amount of work it takes to deal with it.
 
 
 MID-DEVELOPMENT DESIGN CHANGES
