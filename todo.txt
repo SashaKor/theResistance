@@ -2,6 +2,15 @@ theResistance
 Shafali Gupta, Aleksandra Koroza, Rohan Ahammed
 period 08
 
+Updated- as of 1/15/18
+
+To Do:
+
+-Endgame and scoring based on attributes (Our Stretch: csv file work)
+-adding simple minigames and warning statements
+- making more sleek
+
+_________________________________________________
 - plan scenarios for each "type" of Student
 - set up the quiz (quiz method in the driver file)
   - make the questions for the quiz
