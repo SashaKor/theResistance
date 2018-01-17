@@ -231,7 +231,6 @@ public class Woo{
 		    user.changePopularity(1);
 		    user.changeSocStat(1);
 
-		    System.out.println("Okay! Your popularity is now: "+ user._popularity+". Your Social Status is now: "+ user._socStat);
 		}
 
 		else if (userIn==2){
