@@ -20,8 +20,8 @@ public class Woo{
 	}
 	return userIn;
     }
-	
-	
+
+
     public void newGame(){
 	System.out.println("\n\t\t\033[1mWelcome to High School 2.0!\033[0m");
 	System.out.println("\t\t|-------------------------|");
@@ -143,7 +143,7 @@ public class Woo{
 			   "4) gossip loudly about them \n" + //Athlete
 			   "5) tell them about the emotional connection directors associate the color black with" ); // Thespian
         userIn = userInputInt(1,5); //goth, athlete, thespian, nerd, weirdo
-       
+
 	if (userIn == 1){
 	    typeStud[0] +=1;
 	}
@@ -159,7 +159,7 @@ public class Woo{
 	else if(userIn ==5){
 	    typeStud[2] +=1;
 	}
-    
+
 	System.out.println("\nYou turn on the TV. What channel is on? \n" +
 			   "1) NFL \n" + //Athlete
 			   "2) Death TV \n" + //Goth
@@ -209,7 +209,7 @@ public class Woo{
 	int i= (int)(Math.random()*4);
 	int userIn= 0;
 	String used="";
-	
+
 
 	// DAY 1
 	if (day==1){
@@ -218,7 +218,7 @@ public class Woo{
 	    while (user.sceneDay1[i].equals("")){
 		i= (int)(Math.random()*4);
 	    }
-	    
+
 	    System.out.println( user.sceneDay1[i]);
 	    user.sceneDay1[i]="";
 	    System.out.println("Please input the number that matches your response:");
@@ -293,7 +293,7 @@ public class Woo{
 	    } // end i=4
 
 	}// end day 1
-	
+
 	//DAY 2
 	else if (day==2){
 
@@ -378,12 +378,12 @@ public class Woo{
 	    while (user.sceneDay3[i].equals("")){
 		i= (int)(Math.random()*4);
 	    }
-	    
+
 	    System.out.println( user.sceneDay3[i]);
 	    System.out.println("Please input the integer value of your response:");
 	    userIn = userInputInt(1,3);
 	    user.sceneDay3[i]="";
-      
+
 	    if(i ==0){
 		if (userIn == 1){
 		    user.changeIntel(-2);
@@ -529,12 +529,12 @@ public class Woo{
 	System.out.println("This is your score! ------>>>>"+score(user));
 	System.out.println("=====================================\n");
 	System.out.println("bye felicia");
-    
+
     }
 
     /*=========================================
       clearScreen()-- aesthetic purposes
-      prints out 100 lines of empty space 
+      prints out 100 lines of empty space
       ================================*/
     public static void clearScreen(){
 	int x= 0;
@@ -546,12 +546,12 @@ public class Woo{
     }
         /*=========================================
       score()-- used in endGame()
-      score calculated 
+      score calculated
       ================================*/
     public static double score(Student user){
 	return (user._mentHealth +user._physHealth + user._intelligence + user._socStat + (user._popularity * 2));
     }
-    
+
     public static void main(String[] args){
 	Woo game = new Woo();
 	Student user = new Student();
@@ -590,7 +590,7 @@ public class Woo{
 	while (game.day< 5 & user._mentHealth >0 & user._physHealth >0){
 	    game.playTurn(user);
 	    game.clearScreen();
-	    
+
 	    if (Math.random()<0.2){
 		System.out.println();
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -598,7 +598,7 @@ public class Woo{
 
 		//the phone is ringing game
 		if (Math.random()<.5){
-		
+
 		System.out.println("Your mom is calling! She forgot the age of your younger sibling");
 		numberGame g = new numberGame (1, 20);
 
@@ -611,17 +611,22 @@ public class Woo{
 		FindingBrown s= new FindingBrown();
 		s.play();}
 
+    if (user._intelligence <4){
+      Levels L = new Levels();
+      L.play();
+    }
+
 		System.out.println();
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println();
 
-		
+
 	    }
 
 
 
-		
+
 	    if (game.changeDay()){
 		game.day+=1;
 		if (game.day != 5){
@@ -634,5 +639,5 @@ public class Woo{
 	}
 	game.endGame(user, game.day);
 
-    }//end of main method 
+    }//end of main method
 }//end of public class Woo
