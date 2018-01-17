@@ -58,7 +58,7 @@ public class Athlete extends Student{
 	sceneDay3[0]= "You have basketball practice in an hour and your coach wants to talk about safety and the rules. Do you: \n1) decide to go home and skip practice  \n2) go to practice and joke around with your friends \n3) go to practice and pay attention to what your coach has to say";
 	sceneDay3[1]= "It's time for yoga class. You will get to chance to find nirvana. Do you \n1) go to the yoga class and relax your mind and body \n2) play video games \n3) you decline to go with your friend to the yoga class, but you end up going with another friend instead";
 	sceneDay3[2]= "One of your teachers is absent. Do you \n1) do the work the teacher left you \n2) cut class and play football \n3) cut class with a group of people and spend time talking with them";
-	sceneDay3[3]= "The person next to you in CS class offers you weed. Do you \n1) take a small amount of weed \n2) not accept and have the person make fun of you for the rest of the semester \n3) take weed from the person every single day";
+	sceneDay3[3]= "The person next to you in CS class offers you questionable items. Do you \n1) take a small amount of questionable items \n2) not accept and have the person make fun of you for the rest of the semester \n3) take questionable items from the person every single day";
 	sceneDay3[4]= "There is time for silent reading in your English class. Do you \n1) do the reading and search up words you don't know \n2) suggest an essay writing assignment to your teacher and her assistant instead 3 )pretend to read but actually sit on Facebook for a period.";
 
 	//day4
