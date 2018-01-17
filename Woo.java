@@ -591,16 +591,37 @@ public class Woo{
 	    game.playTurn(user);
 	    game.clearScreen();
 	    
-	    if (Math.random()<0.09){
+	    if (Math.random()<0.2){
+		System.out.println();
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+		//the phone is ringing game
+		if (Math.random()<.5){
+		
 		System.out.println("Your mom is calling! She forgot the age of your younger sibling");
 		numberGame g = new numberGame (1, 20);
 
 		//start the game
 		g.play();
 		if (numberGame.att ==5){
-		    user._mentHealth-=3;}
+		    user._mentHealth-=3;}}
+		else{
+		//finding room game
+		FindingBrown s= new FindingBrown();
+		s.play();}
+
+		System.out.println();
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println();
+
 		
 	    }
+
+
+
+		
 	    if (game.changeDay()){
 		game.day+=1;
 		if (game.day != 5){
