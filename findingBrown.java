@@ -1,5 +1,5 @@
 public class findingBrown{
-     int[][] rooms = new int[4][4];
+    static int[][] rooms = new int[4][4];
     int _r;
     int _c;
 
@@ -9,15 +9,15 @@ public class findingBrown{
 
 	//populate:
 
-	for (int x =0; x< 5; x++){
-	    rooms[0][x]= x;
-	}
-	for (int x =0; x< 5; x++){
-	    rooms[x][0]= x;}
+	// for (int x =0; x< 5; x++){
+	//     rooms[0][x]= x;
+	// }
+	// for (int x =0; x< 5; x++){
+	//     rooms[x][0]= x;}
 
 	//for (int x =0; x< 5; x++){
 	// rooms[x][0]= x;}
-	
+
 
 	//setting correct room value
 	_r= (int) (Math.random()*4 +1);
@@ -29,15 +29,15 @@ public class findingBrown{
     //          uses a FOREACH loop
     public static void print2()
     {
-        
+
 	for( int[] row : rooms) {
 	    String result="";
 	    for( int i : row ){
 		result+= i+" ";}
-	    System.out.println(result);   
+	    System.out.println(result);
 	}
-	
-        
+
+
     }
 
     //
@@ -46,6 +46,11 @@ public class findingBrown{
     public static void main(String[] args){
 
 	findingBrown find= new findingBrown();
+  for (int x =0; x< 4; x++){
+	    rooms[0][x]= x;
+	}
+	for (int x =0; x< 4; x++){
+	    rooms[x][0]= x;}
 	print2();
 
     }
