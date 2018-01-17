@@ -26,6 +26,7 @@ Optimizing values so as to extend/ shorten game play. Game could be made more in
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We should not be afraid in making already written classes, like Keyboard, work for us by changing them. We also learned about how complex user error can get, and the amount of work it takes to deal with it.
+We learned how to make words bold and input ascii art.
 
 
 MID-DEVELOPMENT DESIGN CHANGES
@@ -62,8 +63,8 @@ yyyy-mm-dd
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2018-1-16
 --------------------------------------------------------------
-Aleksandra K ::wrote room minigame; played with attributes and game formatting
-Shafali G :: manipulated guessNumber game + flowchart
+Aleksandra K ::wrote room minigame; played with attributes and game formatting + art
+Shafali G :: manipulated guessNumber game + flowchart + art
 Rohan A :: exception handling + uml, last minute fixes
 ==============================================================
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
