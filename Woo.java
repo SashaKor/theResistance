@@ -112,7 +112,7 @@ public class Woo{
 	    typeStud[2] +=1;
 	}
 
-	System.out.println("\nYou're at your locker, getting your books and a group of people dressed in black laugh at you while passing. What do you do?" + "\n" +
+	System.out.println("\nYou're at your locker, getting your books and a group of people laugh at you while passing. What do you do?" + "\n" +
 			   "1) punch them" + "\n" + //Athlete
 			   "2) make some witty remark" + "\n" + //thespian
 			   "3) conjure up black magic" + "\n" + //Goth
@@ -136,7 +136,7 @@ public class Woo{
 	    typeStud[3] +=1;
 	}
 
-	System.out.println("\nSome people wearing black pass by you. What do you do? \n" +
+	System.out.println("\n You are hanging out with your friends when a threatening group of goths pass nearby. What do you do? \n" +
 			   "1) I'm one of them \n" + //Goth
 			   "2) start crying \n" + //Weirdo
 			   "3) tell them that we only percieve color because of light \n" + //nerd
@@ -584,6 +584,36 @@ public class Woo{
 
 
 	}
+	//transition
+
+	clearScreen();
+	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+	System.out.println("~ We are now enterning the first day of school ~");
+	System.out.println("~ May the odds be ever in your favor ~");
+	clearScreen();
+
+	System.out.println(        .-. 
+                           "         /___\
+                                    |___|
+                                    |]_[|
+                                    / I \
+                                 JL/  |  \JL
+      .-.                    i   ()   |   () i                      .-.
+      |_|     .^.           /_\  LJ=======LJ  /_\           .^.     |_|
+_._._/___\._./___\_._._._._.L_J_/.-. .-. .-.\_L_J._._._._._/___\._./___\._._._
+.,        ., |-,-| .,       L_J  |_| [I] |_|  L_J       ., |-,-| .,        .,
+JL        JL |-O-| JL       L_J%%%%%%%%%%%%%%%L_J       JL |-O-| JL        JL
+HH_IIIIII_HH_'-'-'_HH_IIIIII|_|=======H=======|_|IIIIII_HH_'-'-'_HH_IIIIII_HH_
+[]--------[]-------[]-------[_]----\.=I=./----[_]-------[]-------[]--------[]-
+||  _/\_  ||\\_I_//||  _/\_ [_] []_/_L_J_\_[] [_] _/\_  ||\\_I_//||  _/\_  ||\
+||  |__|  ||=/_|_\=||  |__|_|_|   _L_L_J_J_   |_|_|__|  ||=/_|_\=||  |__|  ||-
+||  |__|  |||__|__|||  |__[___]__--__===__--__[___]__|  |||__|__|||  |__|  |||
+[_]IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
+[_] \_I_/ [_]\_I_/[_] \_I_[_]\II/[]\_\I/_/[]\II/[_]_I_/ [_]\_I_/[_] \_I_/  [_]
+L_J./   \.L_J/   \L_J./   L_JI  I[]/     \[]I  IL_J   \.L_J/   \L_J./   \. L_J
+L_J|     |L_J|   |L_J|    L_J|  |[]|     |[]|  |L_J    |L_J|   |L_J|      |L_J
+L_JL_____JL_JL___JL_JL____|-||  |[]|     |[]|  ||-|____JL_JL___JL_JL______JL_J");
+	clearScreen();
 
 	//gameplay
 
