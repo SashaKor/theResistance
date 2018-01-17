@@ -13,13 +13,14 @@ High School 2.0
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The biggest obstacle for us has been deciding the actual structure of the game and writing the driver file in an efficient way. We did not realize how much hardcoding our original proposal required. We cut down on the amount of hardcoding by making many of the scenarios very similar for different types of characters.
+The biggest obstacle for us has been deciding the actual structure of the game and writing the driver file in an efficient way. Flowcharts were a big help to this end as they forced us to write down the concrete dynamics of our game. We did not realize how much hardcoding our original proposal required. We cut down on the amount of hardcoding by making many of the scenarios very similar for different types of characters. Also an obstacle was organizing vid-chats and making sure everyone was on the same page.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <
 Exceptions handling is still at a low at the moment. A String input where an int is expected crashes the whole game. (RESOLVED as of 1/15/18)
 Formatting of text, and how to make sure it fits in anyone's screen, and does not look like a block of text.
+Optimizing values so as to extend/ shorten game play. Game could be made more interactive/ suspenseful for the user.
 >
 
 COOL STUFF LEARNED
@@ -29,11 +30,11 @@ We should not be afraid in making already written classes, like Keyboard, work f
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We shortened the number of scenarios to write by having 4 school days pass by instead of 7. We also redifined popularity vs socStat with popularity reflecting one's influence in their own sphere vs popularity within the wider community.
+We shortened the number of scenarios to write by having 4 school days pass by instead of 7. We also redifined popularity vs socStat with popularity reflecting one's influence in their own sphere vs popularity within the wider community. In addition, minigames were made to pop up randomly instead of being based on the user's attributes. We felt that this would increase the chances of the user encountering a minigame.
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-DO NOT do hard coding heavy games when you are on a time crunch. 100 different scenarios took two team members three hours of painful creative labor. We now better understand the object oriented paradigm and how to write a driver file that works. Before we set off to do this project, the YoRPG driver file seemed very intimidating. Now, we better understand the design choices made in that hw.
+DO NOT do hard coding heavy games when you are on a time crunch. 100 different scenarios took two team members three hours of painful creative labor. We now better understand the object oriented paradigm and how to write a driver file that works. Before we set off to do this project, the YoRPG driver file seemed very intimidating. Now, we have a better understanding of the design choices made in that hw.
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -57,6 +58,13 @@ yyyy-mm-dd
 <Member> :: <Thing member did.>
 <Member> :: <Thing member did.>
 <Member> :: <Thing member did.>
+==============================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2018-1-16
+--------------------------------------------------------------
+Aleksandra K ::wrote room minigame; played with attributes and game formatting
+Shafali G :: manipulated guessNumber game and another simple minigame;
+Rohan A :: exception handling + uml and flowchart updates
 ==============================================================
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2018-1-15
