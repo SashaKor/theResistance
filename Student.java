@@ -80,19 +80,16 @@ public class Student{
     }
 
     public void changeMentHealth(int change){
-	if ((_mentHealth + change) >= 0){
 	System.out.print("\nYour mental health has changed from " + _mentHealth);
 	_mentHealth += change;
 	System.out.print(" to " + _mentHealth + "!\n");
-	}
     }
 
     public void changePhysHealth(int change){
-	if ((_physHealth + change) >= 0){
 	    System.out.print("\nYour physical health  has changed from " + _physHealth);
 	    _physHealth += change;
 	    System.out.print(" to " + _physHealth + "!\n");
-	}
+
     }
 
     public void changeFriendCnt(int change){
