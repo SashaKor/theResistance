@@ -7,7 +7,7 @@ public class Woo{
     String userStr = "";
     int type;
 
-    public int userInputInt(int low, int high){
+    public static int userInputInt(int low, int high){
 	int userIn = Keyboard.readInt();
 	while (userIn > high || userIn < low){
 	    if (userIn == -2147483648){
@@ -20,8 +20,8 @@ public class Woo{
 	}
 	return userIn;
     }
-	
-	
+
+
     public void newGame(){
 	System.out.println("\n\t\t\033[1mWelcome to High School 2.0!\033[0m");
 	System.out.println("\t\t|-------------------------|");
@@ -36,9 +36,7 @@ public class Woo{
     public void quiz(){
 	int[] typeStud = new int[5]; //goth, athlete, thespian, nerd, weirdo
 	int userIn = 0;
-        //String userStr = "";
 	System.out.println("\nHey there! Are you excited to be in High School?");
-	//	System.out.println("Well get ready!");
 	System.out.println("We are gonna get you ready by choosing who you're going to be!");
 	System.out.println("But let's get your name before we transform you. Enter your first name:");
 	userStr = Keyboard.readString();
@@ -143,7 +141,7 @@ public class Woo{
 			   "4) gossip loudly about them \n" + //Athlete
 			   "5) tell them about the emotional connection directors associate the color black with" ); // Thespian
         userIn = userInputInt(1,5); //goth, athlete, thespian, nerd, weirdo
-       
+
 	if (userIn == 1){
 	    typeStud[0] +=1;
 	}
@@ -159,7 +157,7 @@ public class Woo{
 	else if(userIn ==5){
 	    typeStud[2] +=1;
 	}
-    
+
 	System.out.println("\nYou turn on the TV. What channel is on? \n" +
 			   "1) NFL \n" + //Athlete
 			   "2) Death TV \n" + //Goth
@@ -209,7 +207,7 @@ public class Woo{
 	int i= (int)(Math.random()*4);
 	int userIn= 0;
 	String used="";
-	
+
 
 	// DAY 1
 	if (day==1){
@@ -218,7 +216,7 @@ public class Woo{
 	    while (user.sceneDay1[i].equals("")){
 		i= (int)(Math.random()*4);
 	    }
-	    
+
 	    System.out.println( user.sceneDay1[i]);
 	    user.sceneDay1[i]="";
 	    System.out.println("Please input the number that matches your response:");
@@ -249,21 +247,21 @@ public class Woo{
 		else if (userIn ==2){
 		    user.changeMentHealth(-1); }
 		else if (userIn ==3){
-		    user.changeFriendCnt(5);
+		    user.changeFriendCnt(1);
 		}
 	    } //end i=1
 
 	    if (i ==2){
 		if(userIn == 1){
-		    user.changeIntel(2);
-		    user.changeSocStat(-);
+		    user.changeIntel(1);
+		    user.changeSocStat(-1);
 		}
 		else if (userIn ==2){
-		    user.changePhysHealth(2);
+		    user.changePhysHealth(1);
 		}
 		else if (userIn ==3){
 		    user.changeFriendCnt(1);
-		    user.changeMentHealth(2);
+		    user.changeMentHealth(1);
 		}
 	    }//end i=2
 
@@ -272,17 +270,17 @@ public class Woo{
 		    user.changePopularity(-1);
 		}
 		else if (userIn ==2){
-		    user.changeMentHealth(-3);
+		    user.changeMentHealth(-1);
 		}
 		else if (userIn ==3){
 		    user.changeSocStat(1);
-		    user.changePhysHealth(-2);
+		    user.changePhysHealth(-1);
 		}
 	    } // end i=3
 
 	    if(i ==4){
 		if(userIn == 1){
-		    user.changeIntel(3);
+		    user.changeIntel(2);
 		}
 		else if (userIn ==2){
 		    user.changeSocStat(-2);
@@ -293,7 +291,7 @@ public class Woo{
 	    } // end i=4
 
 	}// end day 1
-	
+
 	//DAY 2
 	else if (day==2){
 
@@ -312,7 +310,7 @@ public class Woo{
 		    user.changeSocStat(1);
 		}
 		else if (userIn == 2){
-		    user.changeMentHealth(-3);
+		    user.changeMentHealth(-2);
 		    user.changePhysHealth(1);
 		}
 		else if (userIn == 3){
@@ -325,7 +323,7 @@ public class Woo{
 		    user.changePopularity(2);
 		}
 		else if (userIn == 2){
-		    user.changeMentHealth(-2);
+		    user.changeMentHealth(-1);
 		}
 		else if (userIn == 3){
 		    user.changeFriendCnt(1);
@@ -338,7 +336,7 @@ public class Woo{
 		    user.changeSocStat(1);
 		}
 		else if (userIn == 2){
-		    user.changePhysHealth(3);
+		    user.changePhysHealth(1);
 		}
 		else if (userIn == 3){
 		    user.changeFriendCnt(1);
@@ -364,7 +362,7 @@ public class Woo{
 		    user.changeIntel(2);
 		}
 		else if (userIn == 2){
-		    user.changeSocStat(-3);
+		    user.changeSocStat(-2);
 		}
 		else if (userIn == 3){
 		    user.changeFriendCnt(2);
@@ -378,12 +376,12 @@ public class Woo{
 	    while (user.sceneDay3[i].equals("")){
 		i= (int)(Math.random()*4);
 	    }
-	    
+
 	    System.out.println( user.sceneDay3[i]);
 	    System.out.println("Please input the integer value of your response:");
 	    userIn = userInputInt(1,3);
 	    user.sceneDay3[i]="";
-      
+
 	    if(i ==0){
 		if (userIn == 1){
 		    user.changeIntel(-2);
@@ -393,13 +391,13 @@ public class Woo{
 		}
 		if (userIn == 3){
 		    user.changePhysHealth(2);
-		    user.changeSocStat(-2);
+		    user.changeSocStat(-1);
 		}
 	    } //end i = 0
 
 	    if (i==1){
 		if(userIn ==1){
-		    user.changeMentHealth(2);
+		    user.changeMentHealth(3);
 		}
 		else if(userIn ==2){
 		    user.changePopularity(1);
@@ -427,10 +425,10 @@ public class Woo{
 		    user.changeSocStat(1);
 		}
 		if (userIn ==2){
-		    user.changeMentHealth(-3);
+		    user.changeMentHealth(-2);
 		}
 		if (userIn == 3){
-		    user.changePhysHealth(-5);
+		    user.changePhysHealth(-1);
 
 		}
 	    }
@@ -464,7 +462,7 @@ public class Woo{
 		    user.changeIntel(1);
 		}
 		if(userIn ==2){
-		    user.changeMentHealth(2);
+		    user.changeMentHealth(3);
 		}
 		if (userIn ==3){
 		    user.changeFriendCnt(1);
@@ -472,7 +470,7 @@ public class Woo{
 	    }// i =1
 	    if (i ==2){
 		if(userIn ==1){
-		    user.changePhysHealth(-3);
+		    user.changePhysHealth(-1);
 		}
 		if (userIn ==2){
 		    user.changeSocStat(1);
@@ -487,17 +485,17 @@ public class Woo{
 		    user.changeSocStat(-2);
 		}
 		if (userIn ==2){
-		    user.changeMentHealth(-2);
-		    //user.changeMentHealth(3);
+		    user.changeMentHealth(-1);
+		    user.changeMentHealth(3);
 		}
 		if(userIn ==3){
-		    user.changePhysHealth(-3);
+		    user.changePhysHealth(-1);
 		    user.changeSocStat(1);
 		}
 	    }
 	    if (i ==4){
 		if (userIn ==1){
-		    user.changeIntel(5);
+		    user.changeIntel(1);
 		}
 		if (userIn ==2){
 		    user.changeSocStat(-3);
@@ -526,15 +524,15 @@ public class Woo{
 	    System.out.println("Looks like you failed at being a high schooler. Don't worry, just blame it on Regina George");
 	}
 	System.out.println(user.printStats());
-	System.out.println("This is your score! ------>>>>"+score(user));
+	System.out.println("This is your score! ------>>>> "+score(user));
 	System.out.println("=====================================\n");
 	System.out.println("bye felicia");
-    
+
     }
 
     /*=========================================
       clearScreen()-- aesthetic purposes
-      prints out 100 lines of empty space 
+      prints out 100 lines of empty space
       ================================*/
     public static void clearScreen(){
 	int x= 0;
@@ -544,14 +542,14 @@ public class Woo{
 	}
 
     }
-        /*=========================================
+    /*=========================================
       score()-- used in endGame()
-      score calculated 
+      score calculated
       ================================*/
     public static double score(Student user){
 	return (user._mentHealth +user._physHealth + user._intelligence + user._socStat + (user._popularity * 2));
     }
-    
+
     public static void main(String[] args){
 	Woo game = new Woo();
 	Student user = new Student();
@@ -588,70 +586,68 @@ public class Woo{
 
 	clearScreen();
 	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-	System.out.println("~ We are now enterning the first day of school ~");
+	System.out.println("~ We are now entering the first day of school ~");
 	System.out.println("~ May the odds be ever in your favor ~");
 	clearScreen();
-
-	System.out.println(        .-. 
-                           "         /___\
-                                    |___|
-                                    |]_[|
-                                    / I \
-                                 JL/  |  \JL
-      .-.                    i   ()   |   () i                      .-.
-      |_|     .^.           /_\  LJ=======LJ  /_\           .^.     |_|
-_._._/___\._./___\_._._._._.L_J_/.-. .-. .-.\_L_J._._._._._/___\._./___\._._._
-.,        ., |-,-| .,       L_J  |_| [I] |_|  L_J       ., |-,-| .,        .,
-JL        JL |-O-| JL       L_J%%%%%%%%%%%%%%%L_J       JL |-O-| JL        JL
-HH_IIIIII_HH_'-'-'_HH_IIIIII|_|=======H=======|_|IIIIII_HH_'-'-'_HH_IIIIII_HH_
-[]--------[]-------[]-------[_]----\.=I=./----[_]-------[]-------[]--------[]-
-||  _/\_  ||\\_I_//||  _/\_ [_] []_/_L_J_\_[] [_] _/\_  ||\\_I_//||  _/\_  ||\
-||  |__|  ||=/_|_\=||  |__|_|_|   _L_L_J_J_   |_|_|__|  ||=/_|_\=||  |__|  ||-
-||  |__|  |||__|__|||  |__[___]__--__===__--__[___]__|  |||__|__|||  |__|  |||
-[_]IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
-[_] \_I_/ [_]\_I_/[_] \_I_[_]\II/[]\_\I/_/[]\II/[_]_I_/ [_]\_I_/[_] \_I_/  [_]
-L_J./   \.L_J/   \L_J./   L_JI  I[]/     \[]I  IL_J   \.L_J/   \L_J./   \. L_J
-L_J|     |L_J|   |L_J|    L_J|  |[]|     |[]|  |L_J    |L_J|   |L_J|      |L_J
-L_JL_____JL_JL___JL_JL____|-||  |[]|     |[]|  ||-|____JL_JL___JL_JL______JL_J");
+	System.out.println(" \n " +
+			   "                                   .-.   \n" +
+			   "                                   /___   \n" +
+			   "                                   |___|  \n" +
+			   "                                   |]_[| \n"+
+			   "                                    / I   \n" +
+			   "                                 JL/  |  JL  \n" +
+			   ".-.                          i   ()   |   () i                    .-. \n"+
+			   "|_|     .^.                 /_  LJ=======LJ  /_           .^.     |_| \n" +
+			   "_._._/___._./____._._._._.L_J_/.-. .-. .-._L_J._._._._._/___._./___._._._ \n" +
+			   ".,        ., |-,-| .,       L_J  |_| [I] |_|  L_J       ., |-,-| .,        ., \n"+
+			   "JL        JL |-O-| JL       L_J%%%%%%%%%%%%%%%L_J       JL |-O-| JL        JL \n" +
+			   "HH_IIIIII_HH_'-'-'_HH_IIIIII|_|=======H=======|_|IIIIII_HH_'-'-'_HH_IIIIII_HH_ \n" +
+			   "[]--------[]-------[]-------[_]----.=I=./----[_]-------[]-------[]--------[]- \n" +
+			   "||  _/_  ||L_I_/||  _/_ [_] []_/_L_J__[] [_] _/_  ||LI_/||  _/_  ||L_I_/   || \n" +
+			   "||  |__|  ||=/_|_=||  |__|_|_|   _L_L_J_J_   |_|_|__|  ||=/_|_=||  |__|     ||- \n" +
+			   "||  |__|  |||__|__|||  |__[___]__--__===__--__[___]__|  |||__|__|||  |__|  ||| \n" +
+			   "[_]IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_] \n" +
+			   "[_] _I_/ [_]_I_/[_] _I_[_]II/[]_I/_/[]II/[_]_I_/ [_]_I_/[_] _I_/  [_] [_]  [_] \n" +
+			   "L_J./    .L_J/    L_J./   L_JI   I[]/     []I  IL_J    .L_J/   L_J./     . L_J \n" +
+			   "L_J|     |L_J|   |L_J|    L_J|  |[]|     |[]|  |L_J    |L_J|   |L_J|      |L_J \n" +
+			   "L_JL_____JL_JL___JL_JL____|-||  |[]|     |[]|  ||-|____JL_JL___JL_JL______JL_J \n");
 	clearScreen();
 
 	//gameplay
-
+	    int gameCounter = 0;
 	while (game.day< 5 & user._mentHealth >0 & user._physHealth >0){
 	    game.playTurn(user);
 	    game.clearScreen();
-	    
+	    if (gameCounter == 0){
+		//finding room game
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println();
+		FindingBrown s= new FindingBrown();
+		s.play();
+		gameCounter += 1;
+		System.out.println();
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println();
+	    }
 	    if (Math.random()<0.2){
 		System.out.println();
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
 		//the phone is ringing game
 		if (Math.random()<.5){
-		
-		System.out.println("Your mom is calling! She forgot the age of your younger sibling");
-		numberGame g = new numberGame (1, 20);
 
-		//start the game
-		g.play();
-		if (numberGame.att ==5){
-		    user._mentHealth-=3;}}
-		else{
-		//finding room game
-		FindingBrown s= new FindingBrown();
-		s.play();}
+		    System.out.println("Your mom is calling! She forgot the age of your younger sibling");
+		    NumberGame g = new NumberGame (1, 20);
 
-		System.out.println();
-		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println();
-
-		
+		    //start the game
+		    g.play();
+		    if (NumberGame.att ==5){
+			user._mentHealth-=3;
+		    }
+		    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		    System.out.println();
+		}
 	    }
-
-
-
-		
+	
 	    if (game.changeDay()){
 		game.day+=1;
 		if (game.day != 5){
@@ -662,7 +658,6 @@ L_JL_____JL_JL___JL_JL____|-||  |[]|     |[]|  ||-|____JL_JL___JL_JL______JL_J")
 		}
 	    }
 	}
-	game.endGame(user, game.day);
-
-    }//end of main method 
+	game.endGame(user, game.day);//prints stats and gives end game msg
+    }//end of main method
 }//end of public class Woo

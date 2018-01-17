@@ -63,8 +63,8 @@ yyyy-mm-dd
 2018-1-16
 --------------------------------------------------------------
 Aleksandra K ::wrote room minigame; played with attributes and game formatting
-Shafali G :: manipulated guessNumber game and another simple minigame;
-Rohan A :: exception handling + uml and flowchart updates
+Shafali G :: manipulated guessNumber game + flowchart
+Rohan A :: exception handling + uml, last minute fixes
 ==============================================================
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2018-1-15

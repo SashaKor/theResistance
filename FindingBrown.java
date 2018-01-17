@@ -44,6 +44,7 @@ public class FindingBrown{
 
 	System.out.println("You are running late and can't seem to find Mr.Brown's classroom!");
 	System.out.println("Here's the layout of the cs department classrooms in your school:");
+	System.out.println("The classrooms are laid out 3x3. 0's represent closed doors, 6's represent opened doors. Don't try to open an already opened door, you will just waste a turn!");
 	System.out.println();
 
         
@@ -53,10 +54,10 @@ public class FindingBrown{
 	    print2();
 	    
 	    System.out.println("Choose the row you think the classroom is in: ");
-	    userStrRow= Keyboard.readInt();
+	    userStrRow= Woo.userInputInt(1,3);
 
 	    System.out.println("Choose the column you think the classroom is in: ");
-	    userStrCol= Keyboard.readInt();
+	    userStrCol= Woo.userInputInt(1,3);
 
 	    if ((userStrRow==_r) && (userStrCol== _c)){
 		System.out.println(" You got to class on time! The room number was " + _r +","+_c+"!");

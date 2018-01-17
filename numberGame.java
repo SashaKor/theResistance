@@ -1,8 +1,8 @@
 import cs1.Keyboard; 
-public class numberGame{
+public class NumberGame{
     
     /*==================================================
-      class numberGame -- fun fun fun!
+      class NumberGame -- fun fun fun!
 
       eg, sample interaction with end user:
       Guess a # fr 1-100: 50
@@ -25,7 +25,7 @@ public class numberGame{
 	  post: _lo is lower bound, _hi is upper bound,
 	  _guessCtr is 1, _target is random int on range [_lo,_hi]
 	  ==================================================*/
-	public numberGame( int a, int b ) 
+	public NumberGame( int a, int b ) 
 	{
 	    _lo = Math.min(a,b);
 	    _hi = Math.max(a,b);
@@ -45,7 +45,7 @@ public class numberGame{
 	public void playRec()   
 	{
 	    System.out.print("Guess a num bt " + _lo + " & " + _hi + ": ");
-	    int guess = Keyboard.readInt();
+	    int guess = Woo.userInputInt(_lo,_hi);
 
 	    //3 cases: we either found it, too hi, too lo
 	    if( guess > _target ) { 
@@ -80,7 +80,7 @@ public class numberGame{
 
 	    while(att<5 ) {
 		System.out.print("Guess a num bt " + _lo + " & " + _hi + ": ");
-		guess = Keyboard.readInt();
+		guess = Woo.userInputInt(_lo,_hi);
 		if( guess == _target ) {
 		    System.out.println("W00T! It took " + _guessCtr + " guesses. You have not failed your mother.");
 		    break;
@@ -119,7 +119,7 @@ public class numberGame{
 	public static void main( String[] args ) 
 	{
 	    //instantiate a new game
-	    //numberGame g = new numberGame (1, 20);
+	    //NumberGame g = new NumberGame (1, 20);
 
 	    //start the game
 	    //g.play();
@@ -127,4 +127,4 @@ public class numberGame{
 	      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	}//end main
 
-    }//end numberGames
+    }//end NumberGame

@@ -19,3 +19,12 @@ in terminal followed by
 java Woo
 ```
 If there are any issues with launching the game, please contact any one of the developers!
+
+There are two minigames that you might be able to play. One is a simple number guessing game, the other is a room finding game based on a 2d array.
+
+0 1 2 3
+1 0 0 0
+2 0 0 0 
+3 0 0 0
+
+0's represent closed doors, 6's represent opened doors. The first row and first column give the row number and column number. 

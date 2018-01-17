@@ -63,39 +63,52 @@ public class Student{
 	//~~~~~~~~~~~~~~~~~~~~Mutators~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     public void changeSocStat(int change){
-	System.out.print("\nYour social status has changed from " + _socStat);
-	_socStat += change;
-	System.out.print(" to " + _socStat + "!\n");
+	if ((_socStat + change) >= 0){
+	    System.out.print("\nYour social status has changed from " + _socStat);
+	    _socStat += change;
+	
+	    System.out.print(" to " + _socStat + "!\n");
+	}
     }
 
     public void changeIntel(int change){
-	System.out.println("\nYour intelligence has changed from " + _intelligence);
-	_intelligence += change;
-	System.out.print(" to " + _intelligence + "!\n");
+	if ((_intelligence + change) >= 0){
+	    System.out.print("\nYour intelligence has changed from " + _intelligence);
+	    _intelligence += change;
+	    System.out.print(" to " + _intelligence + "!\n");
+	}
     }
 
     public void changeMentHealth(int change){
+	if ((_mentHealth + change) >= 0){
 	System.out.print("\nYour mental health has changed from " + _mentHealth);
 	_mentHealth += change;
 	System.out.print(" to " + _mentHealth + "!\n");
+	}
     }
 
     public void changePhysHealth(int change){
-	System.out.print("\nYour physical health  has changed from " + _physHealth);
-	_physHealth += change;
-	System.out.print(" to " + _physHealth + "!\n");
+	if ((_physHealth + change) >= 0){
+	    System.out.print("\nYour physical health  has changed from " + _physHealth);
+	    _physHealth += change;
+	    System.out.print(" to " + _physHealth + "!\n");
+	}
     }
 
     public void changeFriendCnt(int change){
-	System.out.print("\nYour friend count has changed from " + _friendCnt);
-	_friendCnt += change;
-	System.out.print(" to " + _friendCnt + "!\n");
+	if ((_friendCnt + change) >= 0){
+	    System.out.print("\nYour friend count has changed from " + _friendCnt);
+	    _friendCnt += change;
+	    System.out.print(" to " + _friendCnt + "!\n");
+	}
     }
 
     public void changePopularity(int change){
-	System.out.print("\nYour popularity  has changed from " + _popularity);
-	_popularity += change;
-	System.out.print(" to " + _popularity + "!\n");
+	if ((_popularity + change) >= 0){
+	    System.out.print("\nYour popularity  has changed from " + _popularity);
+	    _popularity += change;
+	    System.out.print(" to " + _popularity + "!\n");
+	}
     }
 
     public void setName(String newName){
