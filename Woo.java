@@ -24,6 +24,18 @@ public class Woo{
 
     public void newGame(){
 	System.out.println("\n\t\t\033[1mWelcome to High School 2.0!\033[0m");
+  System.out.println(" \033[1m\n" +
+
+
+"  _    _ _       _        _____      _                 _   ___    ___   \n" +
+" | |  | (_)     | |      / ____|    | |               | | |__   / _    \n" +
+" | |__| |_  __ _| |__   | (___   ___| |__   ___   ___ | |    ) || | | | \n" +
+" |  __  | |/ _` | '_    ___  /    __| '_  | _  | _ | |  |   /  || | | |       \n"+
+" | |  | | | (_| | | | |  ____) | (__| | | | (_) | (_) | |  / /_ | |_| |\n" +
+" |_|  |_|_|__, |_| |_| |_____/ ___|_| |_|___/ ___/|_| |____(_)___/___ \n" +
+"            __/ |                                                       \n" +
+"           |___/                                                        \n \033[0m"         );
+
 	System.out.println("\t\t|-------------------------|");
 	quiz();
     }
@@ -636,18 +648,18 @@ public class Woo{
 		if (Math.random()<.5){
 
 		    System.out.println("Your mom is calling! She forgot the age of your younger sibling");
-		    NumberGame g = new NumberGame (1, 20);
+		    numberGame g = new numberGame (1, 20);
 
 		    //start the game
 		    g.play();
-		    if (NumberGame.att ==5){
+		    if (numberGame.att ==5){
 			user._mentHealth-=3;
 		    }
 		    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		    System.out.println();
 		}
 	    }
-	
+
 	    if (game.changeDay()){
 		game.day+=1;
 		if (game.day != 5){

@@ -1,6 +1,6 @@
-import cs1.Keyboard; 
-public class NumberGame{
-    
+import cs1.Keyboard;
+public class numberGame{
+
     /*==================================================
       class NumberGame -- fun fun fun!
 
@@ -16,16 +16,16 @@ public class NumberGame{
     //import cs1.Keyboard
 	//instance vars
 	private int _lo, _hi, _guessCtr, _target;
-    public static int att = 0; 
+    public static int att = 0;
 
 
 	/*==================================================
 	  constructor -- initializes a guess-a-number game
-	  pre:  
+	  pre:
 	  post: _lo is lower bound, _hi is upper bound,
 	  _guessCtr is 1, _target is random int on range [_lo,_hi]
 	  ==================================================*/
-	public NumberGame( int a, int b ) 
+	public numberGame( int a, int b )
 	{
 	    _lo = Math.min(a,b);
 	    _hi = Math.max(a,b);
@@ -39,16 +39,16 @@ public class NumberGame{
 	/*==================================================
 	  void playRec() -- Prompts a user to guess until guess is correct.
 	  Uses recursion.
-	  pre:  
-	  post: 
+	  pre:
+	  post:
 	  ==================================================*/
-	public void playRec()   
+	public void playRec()
 	{
 	    System.out.print("Guess a num bt " + _lo + " & " + _hi + ": ");
 	    int guess = Woo.userInputInt(_lo,_hi);
 
 	    //3 cases: we either found it, too hi, too lo
-	    if( guess > _target ) { 
+	    if( guess > _target ) {
 		System.out.println("Too high.");
 		_guessCtr++;
 		_hi = guess - 1;
@@ -70,13 +70,13 @@ public class NumberGame{
 	/*==================================================
 	  void playIter() -- Prompts a user to guess until guess is correct.
 	  Uses iteration.
-	  pre:  
-	  post: 
+	  pre:
+	  post:
 	  ==================================================*/
-	public void playIter() 
+	public void playIter()
 	{
 	    int guess;
-	    // int a = 0; 
+	    // int a = 0;
 
 	    while(att<5 ) {
 		System.out.print("Guess a num bt " + _lo + " & " + _hi + ": ");
@@ -104,8 +104,8 @@ public class NumberGame{
 
 
 	//wrapper for playRec/playIter to simplify calling
-	public void play() 
-	{ 
+	public void play()
+	{
 	    //use one or the other below:
 	    //playRec();
 	    //int a = 0;
@@ -116,7 +116,7 @@ public class NumberGame{
 
 
 	//main method to run it all
-	public static void main( String[] args ) 
+	public static void main( String[] args )
 	{
 	    //instantiate a new game
 	    //NumberGame g = new NumberGame (1, 20);
