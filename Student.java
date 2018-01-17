@@ -122,26 +122,4 @@ public class Student{
 	return result;
     }
 
-    /*
-      score()-- calculates score by taking into account all the attributes (other than name)
-      post: returns double result
-     */
-
-    public double score(){
-	//implementation
-	return 1.0;
-    }
-
-    /*
-      randInt()-- returns a random integer range 1-5 (inclusive)
-     */
-    public int randInt(){
-	//implementation
-	return 1;
-    }
-
-    /*
-      getDay()-- accessor to access day from driver file
-      (may not be necessary)
-     */
 }
